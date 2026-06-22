@@ -44,7 +44,7 @@
 %──────────────────────────────────────────────────────────────────────────────
 \newlength{\SW}\setlength{\SW}{6.3cm}    % sidebar width
 \newlength{\MW}\setlength{\MW}{14.7cm}   % main col width  (21 - 6.3)
-\newlength{\PH}\setlength{\PH}{29.7cm}   % A4 height
+\newlength{\PH}\setlength{\PH}{29.5cm}   % A4 height slightly reduced
 
 %──────────────────────────────────────────────────────────────────────────────
 % BACKGROUND — hooked at shipout so it is ALWAYS on page 1 with content
@@ -160,11 +160,11 @@
       \begin{scope}
         \clip (0,0) circle(1.25cm);
         % ↓ Replace chirag.jpg with your photo filename
-        \node at (0,0){%
-          \includegraphics[width=2.5cm,height=2.5cm]{chirag.jpg}};
+        % \node at (0,0){%
+        %   \includegraphics[width=2.5cm,height=2.5cm]{chirag.jpg}};
         % No photo? Comment line above, uncomment two lines below:
-        % \fill[Navy!70!black](-1.3cm,-1.3cm)rectangle(1.3cm,1.3cm);
-        % \node[white,font=\scriptsize] at (0,0){Photo};
+        \fill[Navy!70!black](-1.3cm,-1.3cm)rectangle(1.3cm,1.3cm);
+        \node[white,font=\scriptsize] at (0,0){Photo};
       \end{scope}
     \end{tikzpicture}
 
